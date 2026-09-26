@@ -2,8 +2,9 @@ issued_books = []
 
 
 def issue_book(books, students):
-    student_id = input("Enter student ID: ")
-    book_id = input("Enter book ID: ")
+    student_id=input(" enter student ID:   ")
+    book_id=input("enter book ID:        ")
+     
 
     student_found = False
     book_found = False
@@ -35,8 +36,10 @@ def issue_book(books, students):
 
 
 def return_book():
-    student_id = input("Enter student ID: ")
-    book_id = input("Enter book ID: ")
+    student_id=input("enter student ID:    ")
+    book_id=input("enter book ID:        ")
+ 
+ 
 
     for issued in issued_books:
         if issued[0] == student_id and issued[1] == book_id:
@@ -48,13 +51,20 @@ def return_book():
 
 
 def view_issued_books():
-    print("\n===== ISSUED BOOKS =====")
+    print("\n====ISSUED BOOKS=====")
 
-    if len(issued_books) == 0:
-        print("No books are currently issued.")
+    if len(issued_books)==0:
+        print("no books are currentlly issued")
         return
 
+
     for issued in issued_books:
-        print("Student ID:", issued[0])
-        print("Book ID:", issued[1])
-        print("----------------")
+        print("student ID:", issued[0])
+        print("book ID: ", issued[1])
+        print("---------------------")
+
+
+
+  
+
+      
